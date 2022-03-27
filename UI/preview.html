@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .detail .detail__product .detail__product__view {
+            display: grid;
+            grid-template-columns: 45% auto;
+            grid-gap: 20px;
+        }
+
+        .detail .detail__product .detail__product__view .detail__product_img .slideshow_gallery .mySlides img {
+            vertical-align: middle;
+            object-fit: cover;
+            height: 550px;
+        }
+
+        .detail .detail__product .detail__product__view .detail__product_img .slideshow_gallery .mySlides iframe {
+            width: 100%;
+            height: calc(.5625 * 100vw);
+            height: 550px;
+            outline: none;
+            border: none;
+            vertical-align: middle;
+            object-fit: cover;
+        }
+
+        .detail .detail__product .detail__product__view .detail__product_img .slideshow_gallery .img-small {
+            display: flex;
+            margin: 5px 0;
+        }
+
+        .detail .detail__product .detail__product__view .detail__product_img .slideshow_gallery .img-small .column {
+            display: flex;
+            height: 100px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .detail .detail__product .detail__product__view .detail__product_img .slideshow_gallery .img-small .column img {
+            object-fit: cover;
+        }
+
+        .detail .detail__product .detail__product__view .detail__product_img .slideshow_gallery .img-small .column i {
+            width: 100%;
+            font-size: 45px;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: #0D0C22;
+            height: 150px;
+        }
+
+        .detail .detail__product {
+            padding: 40px 0;
+        }
+
+        .detail .detail__product .detail__product__view .detail__product__infor p {
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .detail .detail__product .detail__product__view .detail__product__infor .detail__product__name h4 {
+            font-size: 22px;
+            color: #2D3748;
+        }
+
+        .detail .detail__product .detail__product__view .detail__product__infor .detail__product__scores {
+            border-bottom: 1px solid #e1e1e1;
+            padding-bottom: 30px;
+            margin-bottom: 30px !important;
+        }
+
+        .detail .detail__product .detail__product__view .detail__product__infor .detail__product__scores p,
+        .detail .detail__product .detail__product__view .detail__product__infor .detail__product__scores span {
+            font-size: 20px;
+        }
+
+        .detail .detail__product .detail__product__view .detail__product__infor .detail__product__scores span {
+            color: #f35555;
+        }
+
+        .detail .detail__product .detail__product__view .detail__product__infor p {
+            color: #606060;
+            font-size: 17px;
+        }
+
+        .detail .detail__product .detail__product__view .detail__product__infor span {
+            font-size: 15px;
+            color: #606060;
+        }
+
+        .detail .detail__product .detail__product__view .detail__product__infor i {
+            font-size: 15px;
+            color: #606060;
+        }
+
+        .detail .detail__product .detail__product__view .detail__product__infor .detail__product__member>span {
+            margin-right: 10px;
+            line-height: 30px;
+        }
+
+        .detail .detail__product .detail__product__view .detail__product__infor .detail__product__scores,
+        .detail .detail__product .detail__product__view .detail__product__infor .detail__product__specialized,
+        .detail .detail__product .detail__product__view .detail__product__infor .detail__product__subject-code,
+        .detail .detail__product .detail__product__view .detail__product__infor .detail__product__semester,
+        .detail .detail__product .detail__product__view .detail__product__infor .detail__product__teacher,
+        .detail .detail__product .detail__product__view .detail__product__infor .detail__product__published {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+
+        .detail .detail__product .detail__product__view .detail__product__infor .detail__product__teacher {
+            border-bottom: 1px solid #e1e1e1;
+            padding-bottom: 25px;
+        }
+
+        .detail .detail__product .detail__product__view .detail__product__infor .detail__product__document {
+            margin-top: 20px;
+        }
+
+        .detail .detail__product .detail__product__custom .btn-slide h4 {
+            text-align: center;
+            font-size: 20px;
+            margin: 5px;
+            color: #2D3748;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .detail .detail__product .detail__product__custom {
+            margin: 40px 0;
+        }
+
+        .detail .detail__product .detail__product__custom .description {
+            margin-top: 30px;
+        }
+
+        @media (max-width:960px) {
+            .detail .detail__product .detail__product__view {
+                display: block;
+            }
+
+            .detail .detail__product .detail__product__view .detail__product__infor {
+                margin: 20px 0;
+            }
+
+            .detail .detail__product .detail__product__view .detail__product_img .slideshow_gallery .mySlides img {
+                vertical-align: middle;
+                object-fit: cover;
+                height: 600px;
+            }
+
+            .detail .detail__product .detail__product__view .detail__product_img .slideshow_gallery .mySlides iframe {
+                width: 100%;
+                /* height: calc(.5625 * 100vw); */
+                height: 600px;
+                outline: none;
+                border: none;
+                vertical-align: middle;
+                object-fit: cover;
+            }
+        }
+
+        @media (max-width:600px) {
+            .detail .detail__product .detail__product__view .detail__product_img .slideshow_gallery .mySlides img {
+
+                height: 450px;
+            }
+
+            .detail .detail__product .detail__product__view .detail__product_img .slideshow_gallery .mySlides iframe {
+                height: 450px;
+            }
+
+        }
+
+        @media (max-width:400px) {
+            .detail .detail__product .detail__product__view .detail__product_img .slideshow_gallery .img-small .column i {
+                font-size: 35px;
+            }
+        }
+
+        @media (max-width:350px) {
+
+            .detail .detail__product .detail__product__view .detail__product_img .slideshow_gallery .mySlides img {
+
+                height: 250px;
+            }
+
+            .detail .detail__product .detail__product__view .detail__product_img .slideshow_gallery .mySlides iframe {
+                height: 250px;
+            }
+
+            .detail .detail__product .detail__product__view .detail__product__infor .detail__product__appraise {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .detail .detail__product .detail__product__view .detail__product__infor .detail__product__appraise .detail__product__appraise__star {
+                width: 100%;
+                border: none;
+            }
+
+            .detail .detail__product .detail__product__custom .btn-slide h4 {
+                font-size: 18px;
+                margin: 5px !important;
+                padding: 5px !important;
+            }
+
+            .detail .detail__product .detail__related__product .detail__related__product__heading h4 {
+                font-size: 18px;
+            }
+
+            .detail .detail__product .detail__related__product .detail__related__product__heading {
+                margin-bottom: 40px;
+            }
+
+            .detail .detail__product .detail__product__view .detail__product_img .slideshow_gallery .img-small .column i {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="detail">
+        <div class="container">
+            <div class="detail__product">
+                <div class="detail__product__view">
+                    <div class="detail__product_img">
+                        <div class="slideshow_gallery">
+                            <div class="slider">
+                                <div class="mySlides video">
+                                    <iframe
+                                        src="https://drive.google.com/file/d/1dhaZo5oXPYp2r4x7C8iKfEaL_2X_tt_F/preview"
+                                        width="100%" allow="autoplay"></iframe>
+                                </div>
+                                
+                                <div class="mySlides">
+                                    <img src="img/1-14-300x382.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img/1-15-300x382.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img/1-17-300x382.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img/1-21-300x382.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img/11-300x382.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img/12-300x382.jpg" style="width:100%">
+                                </div>
+                            </div>
+                            <div class="img-small">
+                                <div class="column">
+                                    <img class="demo cursor" src="img/play-g50fbfd935_640.png"
+                                        style="width: 100%;  object-fit: cover; " alt="imgage">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img/1-14-300x382.jpg" style="width:100%"
+                                        alt="The Woods">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img/1-15-300x382.jpg" style="width:100%"
+                                        alt="Cinque Terre">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img/1-17-300x382.jpg" style="width:100%"
+                                        alt="Mountains and fjords">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img/1-21-300x382.jpg" style="width:100%"
+                                        alt="The Woods">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img/11-300x382.jpg" style="width:100%"
+                                        alt="Cinque Terre">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img/12-300x382.jpg" style="width:100%"
+                                        alt="Mountains and fjords">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail__product__infor">
+                        <div class="detail__product__name">
+                            <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                        </div>
+
+                        <div class="detail__product__scores">
+                            <p>Điểm:</p>
+                            <span>10</span>
+                        </div>
+                        <div class="detail__product__member">
+                            <p>Thành viên:</p><br>
+                            <span>Đỗ Văn Dương - <span>PH11568</span></span><br>
+                            <span>Đỗ Văn Dương - <span>PH11568</span></span><br>
+                            <span>Đỗ Văn Dương - <span>PH11568</span></span><br>
+                            <span>Đỗ Văn Dương - <span>PH11568</span></span><br>
+                            <span>Đỗ Văn Dương - <span>PH11568</span></span><br>
+                            <span>Đỗ Văn Dương - <span>PH11568</span></span><br>
+                            <span>Đỗ Văn Dương - <span>PH11568</span></span><br>
+                        </div>
+
+                        <div class="detail__product__specialized">
+                            <p>Chuyên ngành:</p>
+                            <span>Thiết kế website</span>
+                        </div>
+                        <div class="detail__product__subject-code">
+                            <p>Mã môn:</p>
+                            <span>PRO1234</span>
+                        </div>
+                        <div class="detail__product__semester">
+                            <p>Kỳ học:</p>
+                            <span>7</span>
+                        </div>
+                        <div class="detail__product__teacher">
+                            <p>Giảng viên hướng dẫn:</p>
+                            <span>Tân Văn Sơn</span>
+                        </div>
+                        <div class="detail__product__document">
+                            <p>Nguồn tài liệu:</p>
+                            <span><a href="#">svpoly.xyz</a></span>
+                        </div>
+
+                        <div class="detail__product__published">
+                            <p>Ngày đăng:</p>
+                            <span>1/1/2021</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail__product__custom">
+                    <div class="btn-slide">
+                        <h4>Mô tả</h4>
+                    </div>
+                    <div class="detail__product__slides description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laudantium nostrum veritatis nam
+                        suscipit, atque praesentium fugiat harum vel? Nobis ducimus fugit doloremque soluta aliquam
+                        ullam velit! Repudiandae ut voluptas repellat officia minus sequi nisi officiis. Quisquam magni
+                        commodi repudiandae error perferendis ut earum. Ratione, reprehenderit? Officia veritatis
+                        eligendi enim sit autem nobis illum ipsam, est nihil nostrum at beatae.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.img-small'
+        });
+        $('.img-small').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider',
+            centerMode: true,
+            focusOnSelect: true,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 960,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 300,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+
+
+        });
+    </script>
+</body>
+
+</html>

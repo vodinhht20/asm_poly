@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="header-main">
+        <header>
+            <div class="container">
+                <div class="content">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/FPT_Polytechnic.png" alt="">
+                        </a>
+                    </div>
+                    <div class="search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" name="" id="search-input" placeholder="Tìm kiếm theo tên..."
+                            onchange="search()">
+                    </div>
+                    <div class="btn-account">
+                        <!-- <div class="sign-in">
+                            <a href="#">Sign in</a>
+                        </div> -->
+                        <div class="sign-out">
+                            <a href="#">Sign out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="navbar">
+            <div class="container">
+                <nav>
+                    <a href="#home">Trang chủ</a>
+                    <a href="#about">Thế kế Website</a>
+                    <a href="#menu">Ứng dụng phần mềm</a>
+                    <a href="#products">Thiết kế đồ họa</a>
+                    <a href="#review">Desgital marketing</a>
+                    <a href="#contact">Lập trình Mobile</a>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="header-mobile">
+        <div class="container">
+            <div class="nav-mobile">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/FPT_Polytechnic.png" alt="">
+                    </a>
+                </div>
+                <input type="checkbox" id="check" class="input-check" hidden>
+                <div class="group-btn">
+                    <label for="check" class="navbar-main">
+                        <i class="fas fa-bars"></i>
+                    </label>
+
+
+                </div>
+
+                <label for="check" class="overlay"></label>
+                <div class="navbar-mobile">
+                    <label for="check" class="close-mobile">
+                        <i class="fas fa-times"></i>
+                    </label>
+
+                    <div class="search-mobile">
+                        <i class="fas fa-search"></i>
+<input type="text" name="" id="" placeholder="Tìm kiếm theo tên...">
+                    </div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#" class="home">
+                                    <i class="fas fa-home"></i>
+
+                                    Trang chủ</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="far fa-credit-card"></i>
+
+                                    Thế kế Website</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-crop"></i>
+                                    Ứng dụng phần mềm</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-palette"></i>
+                                    Thiết kế đồ họa</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="far fa-chart-bar"></i>
+                                    Degital Marketing</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-tablet-alt"></i>
+                                    Lập trình Mobile</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    Đăng xuất</a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="detail">
+        <div class="container">
+            <div class="detail__product">
+                <div class="detail__product__view">
+                    <div class="detail__product_img">
+                        <div class="slideshow_gallery">
+                            <div class="slider">
+                                <div class="mySlides video">
+                                    <iframe
+                                        src="https://drive.google.com/file/d/1dhaZo5oXPYp2r4x7C8iKfEaL_2X_tt_F/preview"
+                                        width="100%" allow="autoplay">
+                                    </iframe>
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img/1-14-300x382.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img/1-15-300x382.jpg" style="width:100%">
+</div>
+                                <div class="mySlides">
+                                    <img src="img/1-17-300x382.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img/1-21-300x382.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img/11-300x382.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img/12-300x382.jpg" style="width:100%">
+                                </div>
+                            </div>
+                            <div class="img-small">
+                                <div class="column">
+                                    <img class="demo cursor" src="img/play-g50fbfd935_640.png"
+                                        style="width: 100%;  object-fit: cover; " alt="imgage">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img/1-14-300x382.jpg" style="width:100%" alt="imgage">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img/1-15-300x382.jpg" style="width:100%" alt="imgage">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img/1-17-300x382.jpg" style="width:100%" alt="imgage">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img/1-21-300x382.jpg" style="width:100%" alt="imgage">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img/11-300x382.jpg" style="width:100%" alt="imgage">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img/12-300x382.jpg" style="width:100%" alt="imgage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail__product__infor">
+                        <div class="detail__product__name">
+                            <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                        </div>
+                        <div class="detail__product__appraise">
+                            <div class="detail__product__appraise__star">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+<i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="detail__product__appraise__info">
+                                <span>100</span>
+                                <p>Đánh Giá</p>
+                            </div>
+                            <div class="detail__product__appraise__view">
+                                <i class="far fa-eye">10000</i>
+                            </div>
+                        </div>
+                        <div class="detail__product__scores">
+                            <p>Điểm:</p>
+                            <span>10</span>
+                        </div>
+                        <div class="detail__product__member">
+                            <p>Thành viên:</p>
+                            <span>Đỗ Văn Dương - <span>PH11568</span>,</span>
+                            <span>Đỗ Văn Dương - <span>PH11568</span>,</span>
+                            <span>Đỗ Văn Dương - <span>PH11568</span>,</span>
+                            <span>Đỗ Văn Dương - <span>PH11568</span>,</span>
+                            <span>Đỗ Văn Dương - <span>PH11568</span>,</span>
+                            <span>Đỗ Văn Dương - <span>PH11568</span>,</span>
+                            <span>Đỗ Văn Dương - <span>PH11568</span>.</span>
+                        </div>
+
+                        <div class="detail__product__specialized">
+                            <p>Chuyên ngành:</p>
+                            <span>Thiết kế website</span>
+                        </div>
+                        <div class="detail__product__subject-code">
+                            <p>Mã môn:</p>
+                            <span>PRO1234</span>
+                        </div>
+                        <div class="detail__product__semester">
+                            <p>Kỳ học:</p>
+                            <span>7</span>
+                        </div>
+                        <div class="detail__product__teacher">
+                            <p>Giảng viên hướng dẫn:</p>
+                            <span>Tân Văn Sơn</span>
+                        </div>
+                        <div class="detail__product__document">
+                            <p>Nguồn tài liệu:</p>
+                            <span><a href="#">svpoly.xyz</a></span>
+                        </div>
+                        <div class="detail__product__share">
+                            <p>chia sẻ:</p>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+<div class="detail__product__published">
+                            <p>Ngày đăng:</p>
+                            <span>1/1/2021</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail__product__custom">
+                    <div class="btn-slide">
+                        <h4 onclick="slideProduct(1)">Mô tả</h4>
+                        <h4 onclick="slideProduct(-1)">Đánh giá <span>(0)</span></h4>
+                    </div>
+                    <div class="detail__product__slides description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laudantium nostrum veritatis nam
+                        suscipit, atque praesentium fugiat harum vel? Nobis ducimus fugit doloremque soluta aliquam
+                        ullam velit! Repudiandae ut voluptas repellat officia minus sequi nisi officiis. Quisquam magni
+                        commodi repudiandae error perferendis ut earum. Ratione, reprehenderit? Officia veritatis
+                        eligendi enim sit autem nobis illum ipsam, est nihil nostrum at beatae.
+                    </div>
+                    <div class="detail__product__slides comments">
+                        <div class="detail__product__comment">
+                            <h5>Bình luận</h5>
+                            <p>hiện tại chưa có bình luận nào.</p>
+                            <div class="detail__product__comment__user">
+                                <div class="user">
+                                    <img src="img/avata.jpg" alt="">
+                                    <div class="user__name">
+                                        <p>Võ Văn Định - <span>PH1000</span></p>
+                                        <div class="user__rating">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment">
+                                    <p>Dương giao diện nhìn ảo thật đấy</p>
+
+                                </div>
+                            </div>
+                            <div class="detail__product__comment__user">
+                                <div class="user">
+                                    <img src="img/avata.jpg" alt="">
+                                    <div class="user__name">
+                                        <p>Đỗ Thị Bích - <span>PH1000</span></p>
+                                        <div class="user__rating">
+<i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment">
+                                    <p>Người đẹp giao diện cũng đẹp.</p>
+
+                                </div>
+                            </div>
+                            <div class="detail__product__comment__user">
+                                <div class="user">
+                                    <img src="img/avata.jpg" alt="">
+                                    <div class="user__name">
+                                        <p>Trương Văn Hân - <span>PH1000</span></p>
+                                        <div class="user__rating">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment">
+                                    <p>Dương làm giao diện 10đ.</p>
+
+                                </div>
+                            </div>
+                            <div class="pagination">
+                                <i class="fas fa-angle-left"></i>
+                                <div class="number">
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                </div>
+                                <i class="fas fa-angle-right"></i>
+</div>
+                        </div>
+                        <div class="detail__product__comment__form">
+                            <h5>Đánh giá sản phẩm</h5>
+                            <!-- <div class="btn-account">
+                                <p>Bạn hãy đăng nhập để đánh giá sản phẩm.</p>
+                                <div class="sign-in">
+                                    <a href="#">Đăng nhập</a>
+                                </div>
+
+                            </div> -->
+                            <div class="rating">
+                                <label>Đánh giá của bạn</label>
+                                <div class="rating-item">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="comment-form-item">
+                                <label for="">Bình luận của bạn</label><br>
+                                <textarea name="" id="" cols="30" rows="5"></textarea><br>
+                                <button type="submit">Bình luận</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail__related__product">
+                    <div class="detail__related__product__heading">
+                        <div class="line"></div>
+                        <h4>Sản phẩm liên quan</h4>
+                        <div class="line"></div>
+                    </div>
+                    <div class="product-sub" id="product-sub">
+                        <div class="product-item">
+                            <div class="inner">
+                                <img src="img/26-300x382.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="custom-1">
+                                    <div class="user">
+                                        <img src="img/avata.jpg" alt="">
+                                        <p>username</p>
+                                    </div>
+
+                                </div>
+                                <div class="custom-2">
+                                    <i class="far fa-eye"> 1234</i>
+                                    <div class="star">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="inner">
+                                <img src="img/7-2.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="custom-1">
+                                    <div class="user">
+                                        <img src="img/avata.jpg" alt="">
+                                        <p>username</p>
+                                    </div>
+                                </div>
+                                <div class="custom-2">
+                                    <i class="far fa-eye"> 1234</i>
+                                    <div class="star">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="inner">
+                                <img src="img/26-300x382.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="custom-1">
+                                    <div class="user">
+                                        <img src="img/avata.jpg" alt="">
+                                        <p>username</p>
+                                    </div>
+
+                                </div>
+                                <div class="custom-2">
+                                    <i class="far fa-eye"> 1234</i>
+                                    <div class="star">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="inner">
+                                <img src="img/7-2.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="custom-1">
+<div class="user">
+                                        <img src="img/avata.jpg" alt="">
+                                        <p>username</p>
+                                    </div>
+                                </div>
+                                <div class="custom-2">
+                                    <i class="far fa-eye"> 1234</i>
+                                    <div class="star">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="see-more">
+                    <button>
+                        Xem Thêm ...
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="logo-footer">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="contact">
+                        <h3>Thông tin liên hệ</h3>
+                        <p>Điện thoại: (024) 7300 1955</p>
+                        <p>Email: caodang@fpt.edu.vn</p>
+                    </div>
+                </div>
+                <div class="training-facilities">
+                    <h3>Hệ thống cơ sở đào tạo</h3>
+                    <div class="address">
+                        <div class="address-item">
+                            <p>Cơ Hà Nội:</p>
+                            <div class="address-item-name">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>
+                                    Tòa nhà FPT Polytechnic, Phố Trịnh Văn Bô, Nam Từ Liêm, Hà Nội
+                                </p>
+                            </div>
+                            <div class="phone">
+                                <i class="fas fa-phone-volume"></i>
+                                <p>
+                                    (024) 8582 0808
+                                </p>
+                            </div>
+                        </div>
+                        <div class="address-item">
+                            <p>Cơ Hồ Chí Minh:</p>
+                            <div class="address-item-name">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>
+                                    778/B1 Nguyễn Kiệm, P.4, Q. Phú Nhuận, TP. Hồ Chí Minh
+</p>
+                            </div>
+                            <div class="phone">
+                                <i class="fas fa-phone-volume"></i>
+                                <p>
+                                    028 62523434/0901 660 002
+                                </p>
+                            </div>
+                        </div>
+                        <div class="address-item">
+                            <p>Cơ Đà Nẵng:</p>
+                            <div class="address-item-name">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>
+                                    Văn phòng Tuyển sinh: Số 137 Nguyễn Thị Thập, Phường Hòa Minh, Quận Liên Chiểu, TP.
+                                    Đà Nẵng
+                                </p>
+                            </div>
+                            <div class="phone">
+                                <i class="fas fa-phone-volume"></i>
+                                <p>
+                                    (0236) 3710 999
+                                </p>
+                            </div>
+                        </div>
+                        <div class="address-item">
+                            <p>Cơ Đắk Lắk:</p>
+                            <div class="address-item-name">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>
+                                    Văn phòng Tuyển sinh: Tổ dân phố 8, phường Tân An, TP. Buôn Mê Thuột, Đắk Lắk
+                                </p>
+                            </div>
+                            <div class="phone">
+                                <i class="fas fa-phone-volume"></i>
+                                <p>
+                                    (0262) 355 5678/0913493777
+                                </p>
+                            </div>
+                        </div>
+                        <div class="address-item">
+                            <p>Cơ Cần Thơ:</p>
+                            <div class="address-item-name">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>
+                                    Văn phòng Tuyển sinh: Số 288, Nguyễn Văn Linh, phường An Khánh, quận Ninh Kiều, Tp.
+                                    Cần Thơ
+                                </p>
+                            </div>
+                            <div class="phone">
+                                <i class="fas fa-phone-volume"></i>
+                                <p>
+                                    (0262) 355 5678/0913493777
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        //slideshow_gallery
+        $('.slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.img-small'
+        });
+        $('.img-small').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider',
+            centerMode: true,
+            focusOnSelect: true,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 960,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 300,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        
+        //layout mansory
+        $(document).ready(function () {
+            $('#product-sub').masonry({
+                // options
+                itemSelector: '.product-item',
+            });
+        });
+
+        var index = 1;
+        showSlidesProduct(index);
+        function slideProduct(s) {
+            showSlidesProduct(index += s);
+        }
+        function showSlidesProduct(s) {
+            var i;
+            var btn = document.getElementsByClassName("detail__product__slides");
+            if (s > btn.length) { index = 1 }
+            if (s < 1) { index = btn.length }
+            for (i = 0; i < btn.length; i++) {
+                btn[i].style.display = "none";
+            }
+            btn[index - 1].style.display = "grid";
+        }
+    </script>
+
+</body>
+
+</html>
